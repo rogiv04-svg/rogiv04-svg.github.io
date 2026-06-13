@@ -1,271 +1,99 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VIGOR - Portfolio</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:#111;
-    color:white;
-}
-
-header{
-    background:linear-gradient(135deg,#900,#000);
-    text-align:center;
-    padding:40px 20px;
-}
-
-.logo{
-    width:220px;
-    margin-bottom:20px;
-}
-
-.profile{
-    width:250px;
-    height:250px;
-    border-radius:50%;
-    border:5px solid red;
-    object-fit:cover;
-    display:block;
-    margin:auto;
-}
-
-h1{
-    margin-top:20px;
-    font-size:38px;
-}
-
-.subtitle{
-    color:#ccc;
-    margin-top:10px;
-}
-
-.about{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
-    text-align:center;
-}
-
-.about h2{
-    color:red;
-    margin-bottom:20px;
-}
-
-.projects{
-    padding:40px 20px;
-}
-
-.projects h2{
-    text-align:center;
-    color:red;
-    margin-bottom:30px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
-    max-width:1400px;
-    margin:auto;
-}
-
-.card{
-    background:#1a1a1a;
-    border-radius:15px;
-    overflow:hidden;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card h3{
-    padding:15px;
-    color:#ff4444;
-}
-
-.card p{
-    padding:0 15px 20px;
-    color:#ccc;
-}
-
-.contact{
-    text-align:center;
-    padding:50px 20px;
-    background:#000;
-}
-
-.btn{
-    display:inline-block;
-    background:red;
-    color:white;
-    text-decoration:none;
-    padding:12px 25px;
-    border-radius:10px;
-    margin-top:15px;
-}
-
-footer{
-    text-align:center;
-    padding:20px;
-    background:#090909;
-    color:#aaa;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-
-<img src="logo.png" class="logo">
-
-<br>
-
-<img src="profil.png" class="profile">
-
-<h1>Vigor Wahyu Setyawan, S.Kom</h1>
-
-<p class="subtitle">
-Guru Informatika SMAN 2 Trenggalek
-</p>
-
-</header>
-
-<section class="about">
-<h2>Tentang Saya</h2>
-
-<p>
-Guru Informatika dan pengembang media pembelajaran berbasis Arduino,
-ESP32, IoT, C++, Python, serta teknologi pendidikan interaktif.
-Berpengalaman mengembangkan berbagai proyek inovatif untuk pendidikan,
-otomasi, literasi keuangan, energi terbarukan, dan sistem informasi.
-</p>
-
-</section>
-
-<section class="projects">
-
-<h2>Portfolio Proyek</h2>
-
 <div class="grid">
 
 <div class="card">
 <a href="touch-talk.jpg" target="_blank">
-    <img src="touch-talk.jpg">
+<img src="touch-talk.jpg">
 </a>
 <h3>Touch & Talk WebConnect</h3>
 <p>Media pembelajaran interaktif berbasis sentuhan dan audio.</p>
 </div>
-    
+
 <div class="card">
+<a href="sejarah.jpg" target="_blank">
 <img src="sejarah.jpg">
+</a>
 <h3>Miniatur Sejarah Interaktif</h3>
 <p>Pembelajaran sejarah menggunakan sensor sentuh dan audio.</p>
 </div>
 
 <div class="card">
+<a href="bi-ojk.jpg" target="_blank">
 <img src="bi-ojk.jpg">
+</a>
 <h3>Pusat Edukasi BI & OJK</h3>
 <p>Media literasi keuangan interaktif berbasis ESP32.</p>
 </div>
 
 <div class="card">
+<a href="edufinance.jpg" target="_blank">
 <img src="edufinance.jpg">
+</a>
 <h3>EduFinance Box</h3>
 <p>Simulasi transaksi digital dan QRIS untuk pembelajaran.</p>
 </div>
 
 <div class="card">
+<a href="smart-finance.jpg" target="_blank">
 <img src="smart-finance.jpg">
+</a>
 <h3>VIGOR Smart Finance</h3>
 <p>Media edukasi keuangan modern dengan menu interaktif.</p>
 </div>
 
 <div class="card">
+<a href="tongkat.jpg" target="_blank">
 <img src="tongkat.jpg">
+</a>
 <h3>Tongkat Pintar Tunanetra</h3>
 <p>Alat bantu navigasi menggunakan sensor ultrasonik dan suara.</p>
 </div>
 
 <div class="card">
+<a href="plts.jpg" target="_blank">
 <img src="plts.jpg">
+</a>
 <h3>PLTS Mini Portable</h3>
 <p>Pembangkit listrik tenaga surya portabel berbasis aki dan panel surya.</p>
 </div>
 
 <div class="card">
+<a href="p10.jpg" target="_blank">
 <img src="p10.jpg">
+</a>
 <h3>Running Text P10</h3>
 <p>Display informasi berbasis LED matrix dan Arduino.</p>
 </div>
 
 <div class="card">
+<a href="kasir-mini.jpg" target="_blank">
 <img src="kasir-mini.jpg">
+</a>
 <h3>Kasir Mini ESP32</h3>
 <p>Sistem kasir mini lengkap dengan thermal printer.</p>
 </div>
 
 <div class="card">
+<a href="pengusir-burung.jpg" target="_blank">
 <img src="pengusir-burung.jpg">
+</a>
 <h3>Sensor Pengusir Hama Burung</h3>
 <p>Alat pengusir burung otomatis menggunakan sensor ultrasonik.</p>
 </div>
 
 <div class="card">
+<a href="kasir-cpp.jpg" target="_blank">
 <img src="kasir-cpp.jpg">
+</a>
 <h3>Pemrograman Kasir C++</h3>
 <p>Aplikasi kasir desktop dengan fitur transaksi dan cetak struk.</p>
 </div>
 
 <div class="card">
+<a href="kepegawaian-cpp.jpg" target="_blank">
 <img src="kepegawaian-cpp.jpg">
+</a>
 <h3>Sistem Kepegawaian C++</h3>
 <p>Aplikasi database pegawai dengan fitur CRUD dan pencarian data.</p>
 </div>
 
 </div>
-
-</section>
-
-<section class="contact">
-
-<h2>Kontak</h2>
-
-<p>Email : emailanda@gmail.com</p>
-
-<p>WhatsApp : 08xxxxxxxxxx</p>
-
-<br>
-
-<a class="btn" href="https://wa.me/628xxxxxxxxxx">
-Hubungi Saya
-</a>
-
-</section>
-
-<footer>
-
-© 2026 VIGOR Portfolio
-
-</footer>
-
-</body>
-</html>
