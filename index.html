@@ -1,3 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vigor Wahyu Setyawan | Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+    background:linear-gradient(135deg,#900,#000);
+    text-align:center;
+    padding:40px 20px;
+}
+
+.logo{
+    width:180px;
+    margin-bottom:20px;
+}
+
+.profile{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    border:5px solid red;
+    object-fit:cover;
+    display:block;
+    margin:auto;
+}
+
+h1{
+    margin-top:20px;
+    font-size:38px;
+}
+
+.subtitle{
+    color:#ddd;
+    margin-top:10px;
+}
+
+.about{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.about h2{
+    color:#ff4444;
+    margin-bottom:20px;
+}
+
+.projects{
+    padding:40px 20px;
+}
+
+.projects h2{
+    text-align:center;
+    color:#ff4444;
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    max-width:1400px;
+    margin:auto;
+}
+
+.card{
+    background:#1a1a1a;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card a{
+    display:block;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    cursor:pointer;
+}
+
+.card h3{
+    padding:15px;
+    color:#ff4444;
+}
+
+.card p{
+    padding:0 15px 20px;
+    color:#ccc;
+}
+
+.contact{
+    text-align:center;
+    padding:50px 20px;
+    background:#000;
+}
+
+.btn{
+    display:inline-block;
+    background:red;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#090909;
+    color:#aaa;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.png" class="logo">
+
+<img src="profil.png" class="profile">
+
+<h1>Vigor Wahyu Setyawan, S.Kom</h1>
+
+<p class="subtitle">
+Guru Informatika SMAN 2 Trenggalek
+</p>
+
+</header>
+
+<section class="about">
+
+<h2>Tentang Saya</h2>
+
+<p>
+Guru Informatika dan pengembang media pembelajaran berbasis Arduino,
+ESP32, IoT, C++, Python, serta teknologi pendidikan interaktif.
+Berpengalaman mengembangkan berbagai proyek inovatif untuk pendidikan,
+otomasi, literasi keuangan, energi terbarukan, dan sistem informasi.
+</p>
+
+</section>
+
+<section class="projects">
+
+<h2>Portfolio Proyek</h2>
+
 <div class="grid">
 
 <div class="card">
@@ -97,3 +271,28 @@
 </div>
 
 </div>
+
+</section>
+
+<section class="contact">
+
+<h2>Kontak</h2>
+
+<p>Email : rogiv04@gmail.com</p>
+
+<p>WhatsApp : 081234349696</p>
+
+<br>
+
+<a class="btn" href="https://wa.me/6281234349696" target="_blank">
+Hubungi Saya
+</a>
+
+</section>
+
+<footer>
+© 2026 VIGOR Portfolio
+</footer>
+
+</body>
+</html>
