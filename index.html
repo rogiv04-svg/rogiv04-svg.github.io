@@ -3,79 +3,265 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VIGOR | Informatika & Embedded System</title>
+<title>VIGOR - Portfolio</title>
+
 <style>
-body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#0b0f14;color:#fff}
-header{background:linear-gradient(135deg,#8b0000,#111);padding:70px 20px;text-align:center}
-h1{margin:0;font-size:48px}
-.container{max-width:1100px;margin:auto;padding:20px}
-.card{background:#161b22;border-radius:18px;padding:25px;margin:20px 0;box-shadow:0 0 20px rgba(0,0,0,.3)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
-.skill{background:#202734;padding:15px;border-radius:12px}
-.btn{display:inline-block;background:#b71c1c;color:#fff;text-decoration:none;padding:12px 18px;border-radius:10px;margin:5px}
-footer{text-align:center;padding:20px;color:#bbb}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+    background:linear-gradient(135deg,#900,#000);
+    text-align:center;
+    padding:40px 20px;
+}
+
+.logo{
+    width:220px;
+    margin-bottom:20px;
+}
+
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid red;
+    object-fit:cover;
+}
+
+h1{
+    margin-top:20px;
+    font-size:38px;
+}
+
+.subtitle{
+    color:#ccc;
+    margin-top:10px;
+}
+
+.about{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.about h2{
+    color:red;
+    margin-bottom:20px;
+}
+
+.projects{
+    padding:40px 20px;
+}
+
+.projects h2{
+    text-align:center;
+    color:red;
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    max-width:1400px;
+    margin:auto;
+}
+
+.card{
+    background:#1a1a1a;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+    color:#ff4444;
+}
+
+.card p{
+    padding:0 15px 20px;
+    color:#ccc;
+}
+
+.contact{
+    text-align:center;
+    padding:50px 20px;
+    background:#000;
+}
+
+.btn{
+    display:inline-block;
+    background:red;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#090909;
+    color:#aaa;
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<h1>VIGOR</h1>
-<h2>Vigor Wahyu Setyawan, S.Kom</h2>
-<p>Guru Informatika • Embedded System Developer • Konsultan Project Edukasi</p>
+
+<img src="logo.png" class="logo">
+
+<br>
+
+<img src="profil.jpg" class="profile">
+
+<h1>Vigor Wahyu Setyawan, S.Kom</h1>
+
+<p class="subtitle">
+Guru Informatika SMAN 2 Trenggalek
+</p>
+
 </header>
 
-<div class="container">
+<section class="about">
+<h2>Tentang Saya</h2>
 
-<div class="card">
-<h2>Profil Profesional</h2>
 <p>
-Berpengalaman dalam pengembangan program C++ dan Python untuk kebutuhan sekolah,
-kantor, pembelajaran, serta proyek berbasis mikrokontroler. Fokus pada perancangan
-sistem Arduino, ESP32, IoT, dan PLTS Mini untuk media edukasi maupun demonstrasi teknologi.
+Guru Informatika dan pengembang media pembelajaran berbasis Arduino,
+ESP32, IoT, C++, Python, serta teknologi pendidikan interaktif.
+Berpengalaman mengembangkan berbagai proyek inovatif untuk pendidikan,
+otomasi, literasi keuangan, energi terbarukan, dan sistem informasi.
 </p>
-</div>
 
-<div class="card">
-<h2>Layanan & Keahlian</h2>
+</section>
+
+<section class="projects">
+
+<h2>Portfolio Proyek</h2>
+
 <div class="grid">
-<div class="skill">Pemrograman C++</div>
-<div class="skill">Pemrograman Python</div>
-<div class="skill">Arduino Development</div>
-<div class="skill">ESP32 & IoT</div>
-<div class="skill">PLTS Mini Edukasi</div>
-<div class="skill">Logika Project Elektronika</div>
-<div class="skill">Media Pembelajaran Interaktif</div>
-<div class="skill">Prototype & Rancang Bangun</div>
-</div>
+
+<div class="card">
+<img src="touch-talk.jpg">
+<h3>Touch & Talk WebConnect</h3>
+<p>Media pembelajaran interaktif berbasis sentuhan dan audio.</p>
 </div>
 
 <div class="card">
+<img src="sejarah.jpg">
+<h3>Miniatur Sejarah Interaktif</h3>
+<p>Pembelajaran sejarah menggunakan sensor sentuh dan audio.</p>
+</div>
+
+<div class="card">
+<img src="bi-ojk.jpg">
+<h3>Pusat Edukasi BI & OJK</h3>
+<p>Media literasi keuangan interaktif berbasis ESP32.</p>
+</div>
+
+<div class="card">
+<img src="edufinance.jpg">
+<h3>EduFinance Box</h3>
+<p>Simulasi transaksi digital dan QRIS untuk pembelajaran.</p>
+</div>
+
+<div class="card">
+<img src="smart-finance.jpg">
+<h3>VIGOR Smart Finance</h3>
+<p>Media edukasi keuangan modern dengan menu interaktif.</p>
+</div>
+
+<div class="card">
+<img src="tongkat.jpg">
+<h3>Tongkat Pintar Tunanetra</h3>
+<p>Alat bantu navigasi menggunakan sensor ultrasonik dan suara.</p>
+</div>
+
+<div class="card">
+<img src="plts.jpg">
+<h3>PLTS Mini Portable</h3>
+<p>Pembangkit listrik tenaga surya portabel berbasis aki dan panel surya.</p>
+</div>
+
+<div class="card">
+<img src="p10.jpg">
+<h3>Running Text P10</h3>
+<p>Display informasi berbasis LED matrix dan Arduino.</p>
+</div>
+
+<div class="card">
+<img src="kasir-mini.jpg">
+<h3>Kasir Mini ESP32</h3>
+<p>Sistem kasir mini lengkap dengan thermal printer.</p>
+</div>
+
+<div class="card">
+<img src="pengusir-burung.jpg">
+<h3>Sensor Pengusir Hama Burung</h3>
+<p>Alat pengusir burung otomatis menggunakan sensor ultrasonik.</p>
+</div>
+
+<div class="card">
+<img src="kasir-cpp.jpg">
+<h3>Pemrograman Kasir C++</h3>
+<p>Aplikasi kasir desktop dengan fitur transaksi dan cetak struk.</p>
+</div>
+
+<div class="card">
+<img src="kepegawaian-cpp.jpg">
+<h3>Sistem Kepegawaian C++</h3>
+<p>Aplikasi database pegawai dengan fitur CRUD dan pencarian data.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
 <h2>Kontak</h2>
-<p>📱 081234349696</p>
-<p>📧 rogiv04@gmail.com</p>
-<p>🎵 tiktok.com/@vigor.ws</p>
-<p>📍 Jl. Cokroaminoto 12B, Mayan, Sumbergedong, Trenggalek</p>
 
-<a class="btn" href="https://wa.me/6281234349696">WhatsApp</a>
-<a class="btn" href="mailto:rogiv04@gmail.com">Email</a>
-<a class="btn" href="https://tiktok.com/@vigor.ws">TikTok</a>
-</div>
+<p>Email : emailanda@gmail.com</p>
 
-<div class="card">
-<h2>Portofolio</h2>
-<ul>
-<li>Media Pembelajaran Informatika</li>
-<li>Proyek Arduino dan ESP32</li>
-<li>Sistem Pembayaran Edukasi BI/OJK</li>
-<li>Tongkat Pintar Tunanetra</li>
-<li>Display LED P10 dan Sistem Informasi</li>
-<li>PLTS Mini untuk Edukasi Energi Terbarukan</li>
-</ul>
-</div>
+<p>WhatsApp : 08xxxxxxxxxx</p>
 
-</div>
+<br>
+
+<a class="btn" href="https://wa.me/628xxxxxxxxxx">
+Hubungi Saya
+</a>
+
+</section>
 
 <footer>
-© VIGOR - Informatika, Embedded System & Educational Technology
+
+© 2026 VIGOR Portfolio
+
 </footer>
+
 </body>
 </html>
